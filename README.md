@@ -40,8 +40,6 @@ It allows users to send flower measurements via JSON and receive real-time predi
 ##  Machine Learning Pipeline
 
 
----
-
 ##  Project Architecture
 
 ml_api_project/
@@ -116,7 +114,7 @@ Error	Meaning
 405	Method not allowed
 415	Wrong Content-Type
 422	Invalid input data
-
+///
  Installation
 git clone https://github.com/your-username/ml-flask-api.git
 cd ml-flask-api
