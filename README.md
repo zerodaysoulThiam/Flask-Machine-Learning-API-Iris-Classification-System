@@ -49,51 +49,7 @@
 | 3 | Déployer le modèle via une API Flask | ✅ |
 | 4 | Manipuler HTTP et JSON (requêtes/réponses) | ✅ |
 
----
- Architecture du Projet
-ml_api_project/
-├──  app.py                 # API Flask (routes, chargement modèle, erreurs)
-├──  train_model.py         # Script d'entraînement + sauvegarde
-├──  test_api.py            # Tests automatisés (requests, unittest)
-├──  model.pkl              # Modèle sérialisé (pickle/joblib)
-├──  model_info.json        # Métadonnées (accuracy, classes, features)
-├──  requirements.txt       # Dépendances Python
-├──  data/
-│   └── iris.csv              # Dataset utilisé
-└──  rapport.docx           # Rapport académique complet
 
- Exemple Requête/Réponse
-json
-// POST /predict
-// Content-Type: application/json
-
-{
-  "features": [5.1, 3.5, 1.4, 0.2]
-}
-
-// RÉPONSE (200 OK)
-{
-  "prediction": "setosa",
-  "confidence": 1.0,
-  "class_index": 0,
-  "features_used": [5.1, 3.5, 1.4, 0.2]
-}
-📊 Exemple GET /model-info
-json
-{
-  "model_type": "RandomForestClassifier",
-  "accuracy": 0.9333333333333333,
-  "classes": ["setosa", "versicolor", "virginica"],
-  "n_features": 4,
-  "feature_names": ["sepal_length", "sepal_width", "petal_length", "petal_width"]
-}
- Gestion des Erreurs (Robustesse)
-Code	Signification	Exemple
-400	Bad JSON / champ manquant	{"feat": [1,2,3,4]} au lieu de features
-404	Route non trouvée	/predic (faute de frappe)
-405	Méthode non autorisée	PUT /predict
-415	Wrong Content-Type	XML au lieu de JSON
-422	Données invalides	[5.1, 3.5] (4 features requises)
  Installation & Exécution
 bash
 # 1. Cloner le dépôt
