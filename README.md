@@ -53,8 +53,8 @@
  Installation & Exécution
 bash
 # 1. Cloner le dépôt
-git clone https://github.com/votre-username/ml-flask-api.git
-cd ml-flask-api
+git clone https://github.com/votre-username/API_ML_Flask.git
+cd API_ML_Flask
 
 # 2. Créer un environnement virtuel (recommandé)
 python -m venv venv
