@@ -1,105 +1,139 @@
-<a name="top"></a>
-# 🚀 Flask Machine Learning API – Iris Classification
+<!---------------------------------------------------------------------
+  🔐 ABBLIX OIDC SERVER | PREMIUM README 
+  ONE MAGICAL BLOCK — CERTIFIED OPENID CONNECT PROVIDER
+---------------------------------------------------------------------->
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-API-black?logo=flask)](https://flask.palletsprojects.com/)
-[![Machine Learning](https://img.shields.io/badge/ML-RandomForest-green)](https://scikit-learn.org/)
-[![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-1.8-orange)](https://scikit-learn.org/)
-[![Status](https://img.shields.io/badge/Status-Active-success)]()
-[![Tests](https://img.shields.io/badge/Tests-Passed-brightgreen)]()
-[![API](https://img.shields.io/badge/API-REST-red)]()
-[![Build](https://img.shields.io/badge/Build-Passing-success)]()
-[![License](https://img.shields.io/badge/License-OpenSource-lightgrey)]()
+<div align="center">
 
-<p align="center"><b>Flask Machine Learning API – Iris Classification</b><br>API REST de Machine Learning avec Flask et Scikit-learn</p>
+<!-- GLOW TITLE & BADGES GALORE -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=32&duration=3000&pause=500&color=512BD4&center=true&vCenter=true&width=700&lines=🔐+ABBLIX+OIDC+SERVER;🚀+CERTIFIED+OPENID+PROVIDER;✨+.NET+8+%2B+9+%2B+10" alt="Typing SVG" />
 
-## Description
-Ce projet est une API REST Flask permettant de faire des prédictions sur le dataset Iris grâce à un modèle RandomForestClassifier. L'utilisateur envoie des données JSON et reçoit une prédiction en temps réel.
+[![Abblix OIDC Server](https://resources.abblix.com/imgs/jpg/abblix-oidc-server-github-banner.jpg)](https://www.abblix.com/abblix-oidc-server)
 
-## Pipeline Machine Learning
-Dataset Iris → Prétraitement → Split train/test → RandomForestClassifier → Évaluation (~93%) → Sauvegarde model.pkl → API Flask
+<p>
+  <b>⚡ Production-ready OAuth2 & OpenID Connect Server for .NET</b><br>
+  Certified • Secure • Modular • Free for non-commercial use
+</p>
 
-## Architecture
-ml_api_project/
-app.py
-train_model.py
-test_api.py
-model.pkl
-model_info.json
-requirements.txt
-report.docx
+<!-- ========== SUPERNOVA BADGES SECTION (NO SEPARATION) ========== -->
+<p align="center">
+  <img src="https://img.shields.io/badge/.NET-8.0%2C%209.0%2C%2010.0-512BD4?style=for-the-badge&logo=dotnet" />
+  <img src="https://img.shields.io/badge/language-C%23-239120?style=for-the-badge&logo=csharp" />
+  <img src="https://img.shields.io/badge/OS-linux%2C%20windows%2C%20macOS-0078D4?style=for-the-badge&logo=windows" />
+  <img src="https://img.shields.io/badge/CPU-x86%2C%20x64%2C%20ARM%2C%20ARM64-FF8C00?style=for-the-badge" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=Abblix_Oidc.Server&metric=security_rating&style=for-the-badge" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=Abblix_Oidc.Server&metric=reliability_rating&style=for-the-badge" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=Abblix_Oidc.Server&metric=sqale_rating&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/tests-2000%2B%20passing-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/github/v/release/Abblix/Oidc.Server?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/OpenID%20Certified-634%2F634%20PASSED-00A859?style=for-the-badge&logo=openid" />
+  <img src="https://img.shields.io/badge/license-Source%20Available-9400D3?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/free_for_non_commercial_use-brightgreen?style=for-the-badge" />
+</p>
 
-## Installation
-git clone https://github.com/your-username/flask-ml-iris-api.git
-cd flask-ml-iris-api
-pip install -r requirements.txt
+⭐ Star us on GitHub — your support motivates us a lot! 🙏😊
 
-## Lancement
-python train_model.py
-python app.py
-python test_api.py
+<p align="center">
+  <a href="https://x.com/intent/tweet?text=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/Abblix/Oidc.Server%20%23OpenIDConnect%20%23Security%20%23Authentication"><img src="https://img.shields.io/badge/share-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/Abblix/Oidc.Server"><img src="https://img.shields.io/badge/share-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/Abblix/Oidc.Server"><img src="https://img.shields.io/badge/share-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://www.reddit.com/submit?title=Check%20out%20this%20project%20on%20GitHub:%20https://github.com/Abblix/Oidc.Server"><img src="https://img.shields.io/badge/share-FF4500?style=for-the-badge&logo=reddit&logoColor=white" /></a>
+  <a href="https://t.me/share/url?url=https://github.com/Abblix/Oidc.Server&text=Check%20out%20this%20project%20on%20GitHub"><img src="https://img.shields.io/badge/share-0088CC?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+</p>
 
-## API
-GET /
-Retour :
-{
-"status": "ok",
-"message": "API de Machine Learning – Classification Iris"
-}
+🔥 Why OIDC Server is the best choice for authentication — find out in our <a href="https://resources.abblix.com/pdf/abblix-oidc-server-presentation-eng.pdf">📑 presentation</a>
 
-POST /predict
-URL Postman :
-http://127.0.0.1:5000/predict
+<!-- ANIMATED DIVIDER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=✨%20Certified%20OpenID%20Provider%20✨&fontSize=30&fontAlignY=40" width="100%" />
 
-Format 1 :
-{
-"features": [5.1, 3.5, 1.4, 0.2]
-}
+</div>
 
-Format 2 :
-{
-"sepal length (cm)": 5.1,
-"sepal width (cm)": 3.5,
-"petal length (cm)": 1.4,
-"petal width (cm)": 0.2
-}
+## 🚀 **About** — *Enterprise-grade OAuth2 & OIDC Server*
 
-Réponse :
-{
-"prediction": "setosa",
-"confidence": 1.0,
-"class_index": 0
-}
+**Abblix OIDC Server** is a .NET library designed to provide comprehensive support for OAuth2 and OpenID Connect on the server side. It adheres to high standards of flexibility, reusability, and reliability, utilizing well-known software design patterns, including modular and hexagonal architectures. These patterns ensure the following benefits:
 
-GET /model-info
-Retourne accuracy, confusion matrix, features, modèle, classes.
+- **Modularity**: Different parts of the library can function independently, enhancing the library's modularity and allowing for easier maintenance and updates.
+- **Testability**: Improved separation of concerns makes the code more testable.
+- **Maintainability**: Clear structure and separation facilitate better management of the codebase.
 
-## Erreurs
-400 JSON invalide
-404 route inexistante
-405 méthode non autorisée
-415 content-type incorrect
-422 données invalides
+The library also supports Dependency Injection through the standard .NET DI container, aiding in the organization and management of code. Specifically tailored for seamless integration with ASP.NET WebApi, Abblix OIDC Server employs standard controller classes, binding, and routing mechanisms, simplifying the integration of OpenID Connect into your services.
 
-## Tests
-Postman
-curl
-python test_api.py
+---
 
-Exemple curl :
-curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"features\": [5.1, 3.5, 1.4, 0.2]}"
+## 💎 **Abblix Account** — *Cloud-ready authentication service*
 
-## Résultats
-Accuracy: 93.3%
-Modèle: RandomForestClassifier
-Dataset: Iris
-Classes: 3
-Features: 4
+> **Abblix Account** is a ready-to-use service hosted in the cloud, built on this library. You get passkeys, MFA, social login, and security event notifications — everything your users need, integrated into your website in minutes.
 
-## Auteur
-Mouhamadou Mokhtar Thiam
-Étudiant IoT & Cybersécurité
-Développeur Python / IA / Web / IoT
+👉 **See it live:** [Quorvel Coffee](https://quorvel.abblix.com) is a demo application using Abblix Account for user authentication. It shows how sign-in flows, session management, and user self-service — all delivered by Abblix Account — fit into a client website.
 
-## Conclusion
-Projet complet de déploiement d’un modèle Machine Learning en API REST avec Flask, prêt pour production et GitHub.
+---
+
+## ✨ **What's New** — *Version 2.2 (Latest)*
+
+🚀 **Features**
+- **Custom JWT Implementation**: Complete JWT signing/encryption infrastructure replacing `Microsoft.IdentityModel.Tokens` — uses `System.Text.Json.Nodes` and .NET crypto primitives directly
+- **Enhanced JWE Algorithms**: `RSA-OAEP-256`, AES-GCM key wrapping (`A128GCMKW`/`A192GCMKW`/`A256GCMKW`), and direct key agreement (`dir`)
+- **ACR/AMR Compliance (RFC 8176)**: Authentication Context Class Reference values in discovery and RFC 8176 Authentication Method References
+- **CSP Nonce Support**: Template-based front-channel logout and check session iframe compatible with strict Content Security Policies
+
+✏️ **Improvements**
+- Configurable session cookie path in OIDC Session Management
+- Operation capability validation for `JsonWebKey` classes
+- Bidirectional interoperability tests with `Microsoft.IdentityModel.Tokens`
+
+> See 📋[Release Notes](https://github.com/Abblix/Oidc.Server/releases/tag/v2.2) for full details.
+
+---
+
+## 🎓 **Certification** — *100% OpenID Foundation Certified*
+
+<div align="center">
+  <img src="https://resources.abblix.com/imgs/svg/abblix-oidc-server-openid-foundation-certification-mark.svg" width="120" />
+</div>
+
+We are certified in all profiles. During the certification process, we skipped ZERO tests and received NO warnings. All **634** tests ![Passed](https://img.shields.io/badge/PASSED-brightgreen). We are extremely proud of this achievement. It reflects our overall approach to any endeavor.
+
+### Regular Profiles
+
+| OIDC Profile | Response Types | Tests |
+|--------------|----------------|-------|
+| Basic OP | `code` | 36 |
+| Implicit OP | `id_token` | 58 |
+| Hybrid OP | `code id_token` | 102 |
+| Config OP | `config` | 1 |
+| Dynamic OP | `code` \| `code id_token` \| `code id_token token` \| `code token` \| `id_token` \| `id_token token` | 127 |
+| Form Post OP | `basic` \| `implicit` \| `hybrid` | 196 |
+| 3rd Party-Init OP | `code` \| `code id_token` \| `code id_token token` \| `code token` \| `id_token` \| `id_token token` | 12 |
+| **Total** | | **532** |
+
+### Logout Profiles
+
+| OIDC Profile | Tests |
+|--------------|-------|
+| RP-Initiated OP | 66 |
+| Session OP | 12 |
+| Front-Channel OP | 12 |
+| Back-Channel OP | 12 |
+| **Total** | **102** |
+
+---
+
+## 📝 **How to Build** — *One command to rule them all*
+
+```bash
+# Open a terminal (Command Prompt, PowerShell, or Terminal)
+
+# Clone the repository
+git clone https://github.com/Abblix/Oidc.Server.git
+
+# Navigate to the project directory
+cd Oidc.Server
+
+# Check if .NET SDK is installed
+dotnet --version
+
+# Restore dependencies
+dotnet restore
+
+# Compile the project
+dotnet build
