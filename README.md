@@ -1,6 +1,6 @@
 <!---------------------------------------------------------------------
   🎓 PROJET ACADÉMIQUE | FLASK ML API - IRIS CLASSIFICATION
-  Création et Déploiement d'une API de Machine Learning avec Flask
+  Création et Déploiement d'une API de Machine Learning avec Flask 
   ONE MAGICAL BLOCK — RIGOUREUX & PROFESSIONNEL
 ---------------------------------------------------------------------->
 
