@@ -1,0 +1,78 @@
+{
+  "model_type": "RandomForestClassifier",
+  "library": "scikit-learn",
+  "task": "Classification multi-classes",
+  "dataset": "Iris",
+  "n_classes": 3,
+  "classes": [
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "features": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ],
+  "n_features": 4,
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "random_state": 42
+  },
+  "evaluation": {
+    "accuracy": 0.9333,
+    "train_size": 120,
+    "test_size": 30,
+    "classification_report": {
+      "setosa": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 10.0
+      },
+      "versicolor": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1-score": 0.9,
+        "support": 10.0
+      },
+      "virginica": {
+        "precision": 0.9,
+        "recall": 0.9,
+        "f1-score": 0.9,
+        "support": 10.0
+      },
+      "macro avg": {
+        "precision": 0.9333333333333332,
+        "recall": 0.9333333333333332,
+        "f1-score": 0.9333333333333332,
+        "support": 30.0
+      },
+      "weighted avg": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9333333333333333,
+        "support": 30.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        9,
+        1
+      ],
+      [
+        0,
+        1,
+        9
+      ]
+    ]
+  }
+}
