@@ -56,6 +56,7 @@
 | 4 | Manipuler HTTP et JSON (requêtes/réponses) | ✅ |
 
 ---
+🏗️ Architecture du Projet
 
 ## 🧠 **Pipeline Machine Learning** — *De la donnée à l'API*
 
