@@ -1,17 +1,17 @@
 <!-- ========================================= -->
-<!-- 🚀 FLASK ML API - IRIS CLASSIFICATION -->
+<!--  FLASK ML API - IRIS CLASSIFICATION -->
 <!-- ========================================= -->
 
-<h1 align="center">🚀 Flask Machine Learning API</h1>
+<h1 align="center"> Flask Machine Learning API</h1>
 
 <p align="center">
-  <b>🌸 Iris Classification using Flask + Scikit-learn</b><br>
+  <b> Iris Classification using Flask + Scikit-learn</b><br>
   A complete end-to-end Machine Learning deployment project
 </p>
 
 ---
 
-## 🏆 Badges
+##  Badges
 
 <p align="center">
 
@@ -29,7 +29,7 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This project is a **REST API built with Flask** that serves a **Machine Learning model (RandomForestClassifier)** trained on the **Iris dataset**.
 
@@ -37,12 +37,12 @@ It allows users to send flower measurements via JSON and receive real-time predi
 
 ---
 
-## 🧠 Machine Learning Pipeline
+##  Machine Learning Pipeline
 
 
 ---
 
-## 🏗️ Project Architecture
+##  Project Architecture
 
 ml_api_project/
 │
@@ -57,7 +57,7 @@ ml_api_project/
 
 ---
 
-## 🚀 Features
+##  Features
 
 ✔ REST API with Flask  
 ✔ Machine Learning prediction  
@@ -109,7 +109,7 @@ Model type
 Accuracy
 Confusion matrix
 Features list
-❌ Error Handling
+ Error Handling
 Error	Meaning
 400	Bad JSON format
 404	Route not found
@@ -117,19 +117,19 @@ Error	Meaning
 415	Wrong Content-Type
 422	Invalid input data
 
-⚙️ Installation
+ Installation
 git clone https://github.com/your-username/ml-flask-api.git
 cd ml-flask-api
 
 pip install -r requirements.txt
-▶️ Run Project
+ Run Project
 1. Train model
 python train_model.py
 2. Start API
 python app.py
 3. Test API
 python test_api.py
-🌐 Live Test (Local)
+ Live Test (Local)
 http://127.0.0.1:5000/
 
 Author
