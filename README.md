@@ -1,63 +1,105 @@
-<!---------------------------------------------------------------------
-  🚀 FLASK ML API - IRIS CLASSIFICATION | PREMIUM README 
-  ONE MAGICAL BLOCK — NO SEPARATIONS, JUST PURE AWESOMENESS
----------------------------------------------------------------------->
+<a name="top"></a>
+# 🚀 Flask Machine Learning API – Iris Classification
 
-<div align="center">
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-API-black?logo=flask)](https://flask.palletsprojects.com/)
+[![Machine Learning](https://img.shields.io/badge/ML-RandomForest-green)](https://scikit-learn.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-1.8-orange)](https://scikit-learn.org/)
+[![Status](https://img.shields.io/badge/Status-Active-success)]()
+[![Tests](https://img.shields.io/badge/Tests-Passed-brightgreen)]()
+[![API](https://img.shields.io/badge/API-REST-red)]()
+[![Build](https://img.shields.io/badge/Build-Passing-success)]()
+[![License](https://img.shields.io/badge/License-OpenSource-lightgrey)]()
 
-<!-- GLOW TITLE & BADGES GALORE -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=32&duration=3000&pause=500&color=F7B42C&center=true&vCenter=true&width=600&lines=🚀+FLASK+ML+API;🌸+IRIS+CLASSIFICATION;✨+RANDOM+FOREST+%2B+FLASK" alt="Typing SVG" />
+<p align="center"><b>Flask Machine Learning API – Iris Classification</b><br>API REST de Machine Learning avec Flask et Scikit-learn</p>
 
-<p>
-  <b>⚡ Production-grade Machine Learning API</b><br>
-  End-to-end deployment: training → API → testing → magic ✨
-</p>
+## Description
+Ce projet est une API REST Flask permettant de faire des prédictions sur le dataset Iris grâce à un modèle RandomForestClassifier. L'utilisateur envoie des données JSON et reçoit une prédiction en temps réel.
 
-<!-- ========== SUPERNOVA BADGES SECTION (NO SEPARATION) ========== -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Flask-API-black?logo=flask&style=for-the-badge&logoColor=white" />
-  <img src="https://img.shields.io/badge/ML-RandomForest-228B22?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-1.8-F7931E?logo=scikit-learn&style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Active-00C853?style=for-the-badge&logo=vercel" />
-  <img src="https://img.shields.io/badge/Tests-Passed-4CAF50?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/API-REST-FF4B4B?style=for-the-badge&logo=postman" />
-  <img src="https://img.shields.io/badge/Build-Passing-1E88E5?style=for-the-badge&logo=circleci" />
-  <img src="https://img.shields.io/badge/Code%20Style-Black-000000?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/License-Open%20Source-9400D3?style=for-the-badge&logo=opensourceinitiative" />
-  <img src="https://img.shields.io/badge/Deployment-Ready-FF6F00?style=for-the-badge&logo=docker" />
-  <img src="https://img.shields.io/badge/Accuracy-93%25-2E8B57?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/🚀%20Flask%20Magic-✨-ff69b4?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/🌐%20RESTful%20JSON-✔-blueviolet?style=for-the-badge" />
-</p>
+## Pipeline Machine Learning
+Dataset Iris → Prétraitement → Split train/test → RandomForestClassifier → Évaluation (~93%) → Sauvegarde model.pkl → API Flask
 
-<!-- ANIMATED DIVIDER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=✨%20Deluxe%20ML%20Pipeline%20✨&fontSize=30&fontAlignY=40" width="100%" />
+## Architecture
+ml_api_project/
+app.py
+train_model.py
+test_api.py
+model.pkl
+model_info.json
+requirements.txt
+report.docx
 
-</div>
+## Installation
+git clone https://github.com/your-username/flask-ml-iris-api.git
+cd flask-ml-iris-api
+pip install -r requirements.txt
 
-## 📌 **Project Overview** — *Intelligent Iris Classification API*
+## Lancement
+python train_model.py
+python app.py
+python test_api.py
 
-> This isn't just another API — it's a **production-ready** Flask microservice that serves a **Random Forest** classifier trained on the legendary Iris dataset. Send flower measurements, get real-time predictions with confidence scores. Perfect for MLOps demos, edge AI, and learning end-to-end deployment.
+## API
+GET /
+Retour :
+{
+"status": "ok",
+"message": "API de Machine Learning – Classification Iris"
+}
 
-🎯 **Key Highlights**:
-- ✅ Zero-dependency inference (pickle model)
-- ✅ Graceful error handling (400, 404, 405, 415, 422)
-- ✅ Auto-generated model metadata
-- ✅ JSON-first architecture
-- ✅ Ready for Docker, Kubernetes, or cloud deployment
+POST /predict
+URL Postman :
+http://127.0.0.1:5000/predict
 
----
+Format 1 :
+{
+"features": [5.1, 3.5, 1.4, 0.2]
+}
 
-## 🧠 **Machine Learning Pipeline** — *From Data to Magic*
+Format 2 :
+{
+"sepal length (cm)": 5.1,
+"sepal width (cm)": 3.5,
+"petal length (cm)": 1.4,
+"petal width (cm)": 0.2
+}
 
-```mermaid
-graph LR
-    A[🌺 Iris Dataset] --> B[⚙️ Preprocessing]
-    B --> C[📊 Train/Test Split]
-    C --> D[🌲 RandomForestClassifier]
-    D --> E[📈 Evaluation ~93%]
-    E --> F[💾 Save Model (model.pkl)]
-    F --> G[🐍 Flask API]
-    G --> H[🌐 REST Endpoints]
-    H --> I[✨ Real-time Predictions]
+Réponse :
+{
+"prediction": "setosa",
+"confidence": 1.0,
+"class_index": 0
+}
+
+GET /model-info
+Retourne accuracy, confusion matrix, features, modèle, classes.
+
+## Erreurs
+400 JSON invalide
+404 route inexistante
+405 méthode non autorisée
+415 content-type incorrect
+422 données invalides
+
+## Tests
+Postman
+curl
+python test_api.py
+
+Exemple curl :
+curl -X POST http://127.0.0.1:5000/predict -H "Content-Type: application/json" -d "{\"features\": [5.1, 3.5, 1.4, 0.2]}"
+
+## Résultats
+Accuracy: 93.3%
+Modèle: RandomForestClassifier
+Dataset: Iris
+Classes: 3
+Features: 4
+
+## Auteur
+Mouhamadou Mokhtar Thiam
+Étudiant IoT & Cybersécurité
+Développeur Python / IA / Web / IoT
+
+## Conclusion
+Projet complet de déploiement d’un modèle Machine Learning en API REST avec Flask, prêt pour production et GitHub.
