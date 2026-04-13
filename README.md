@@ -90,7 +90,7 @@ Mouhamadou Mokhtar Thiam
  Institut Supérieur d'Informatique
  Embedded Systems & IoT / Cybersecurity Student
  GitHub • LinkedIn
-
+ 
 </div>
 
 ##  **Pipeline Machine Learning** — *De la donnée à l'API*
