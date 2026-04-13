@@ -1,16 +1,10 @@
-<!---------------------------------------------------------------------
-  🎓 PROJET ACADÉMIQUE | FLASK ML API - IRIS CLASSIFICATION
-  Création et Déploiement d'une API de Machine Learning avec Flask 
-  ONE MAGICAL BLOCK — RIGOUREUX & PROFESSIONNEL
----------------------------------------------------------------------->
-
 <div align="center">
 
 <!-- GLOW TITLE & BADGES GALORE -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=28&duration=3000&pause=500&color=F7B42C&center=true&vCenter=true&width=700&lines=🎓+PROJET+ACADÉMIQUE;🚀+FLASK+ML+API;🌸+CLASSIFICATION+IRIS;✨+MISE+EN+PRODUCTION+REST" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=28&duration=3000&pause=500&color=F7B42C&center=true&vCenter=true&width=700&lines=+PROJET+ACADÉMIQUE;+FLASK+ML+API;+CLASSIFICATION+IRIS;+MISE+EN+PRODUCTION+REST" alt="Typing SVG" />
 
 <p>
-  <b>⚡ Création et Déploiement d'une API de Machine Learning avec Flask</b><br>
+  <b> Création et Déploiement d'une API de Machine Learning avec Flask</b><br>
   Institut Supérieur d'Informatique • Projet API ML • Mise en production réelle
 </p>
 
@@ -29,19 +23,19 @@
 </p>
 
 <!-- ANIMATED DIVIDER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=🎯%20Contexte%20Réel%20-%20Production%20ML%20🎯&fontSize=25&fontAlignY=40" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header&text=%20Contexte%20Réel%20-%20Production%20ML%20&fontSize=25&fontAlignY=40" width="100%" />
 
 </div>
 
-## 📌 **Contexte du Projet**
+##  **Contexte du Projet**
 
 > Dans les systèmes modernes, les modèles de Machine Learning sont intégrés dans des applications via des **API REST**. Ce projet vise à reproduire un **cas réel de mise en production** en utilisant **Flask** — framework imposé (FastAPI, Django interdits).
 
-**Domaine choisi** : 🌸 **Classification** — Dataset Iris (classification de fleurs en 3 espèces)
+**Domaine choisi** :  **Classification** — Dataset Iris (classification de fleurs en 3 espèces)
 
 ---
 
-## 🎯 **Objectifs**
+##  **Objectifs**
 
 ### Objectif Général
 > Développer une solution complète intégrant un modèle de Machine Learning dans une **API REST fonctionnelle**
@@ -56,19 +50,19 @@
 | 4 | Manipuler HTTP et JSON (requêtes/réponses) | ✅ |
 
 ---
-🏗️ Architecture du Projet
+ Architecture du Projet
 ml_api_project/
-├── 🐍 app.py                 # API Flask (routes, chargement modèle, erreurs)
-├── 🧠 train_model.py         # Script d'entraînement + sauvegarde
-├── 🧪 test_api.py            # Tests automatisés (requests, unittest)
-├── 🤖 model.pkl              # Modèle sérialisé (pickle/joblib)
-├── 📄 model_info.json        # Métadonnées (accuracy, classes, features)
-├── 📦 requirements.txt       # Dépendances Python
-├── 📁 data/
+├──  app.py                 # API Flask (routes, chargement modèle, erreurs)
+├──  train_model.py         # Script d'entraînement + sauvegarde
+├──  test_api.py            # Tests automatisés (requests, unittest)
+├──  model.pkl              # Modèle sérialisé (pickle/joblib)
+├──  model_info.json        # Métadonnées (accuracy, classes, features)
+├──  requirements.txt       # Dépendances Python
+├──  data/
 │   └── iris.csv              # Dataset utilisé
-└── 📑 rapport.docx           # Rapport académique complet
+└──  rapport.docx           # Rapport académique complet
 
-🔮 Exemple Requête/Réponse
+ Exemple Requête/Réponse
 json
 // POST /predict
 // Content-Type: application/json
@@ -93,14 +87,14 @@ json
   "n_features": 4,
   "feature_names": ["sepal_length", "sepal_width", "petal_length", "petal_width"]
 }
-❌ Gestion des Erreurs (Robustesse)
+ Gestion des Erreurs (Robustesse)
 Code	Signification	Exemple
 400	Bad JSON / champ manquant	{"feat": [1,2,3,4]} au lieu de features
 404	Route non trouvée	/predic (faute de frappe)
 405	Méthode non autorisée	PUT /predict
 415	Wrong Content-Type	XML au lieu de JSON
 422	Données invalides	[5.1, 3.5] (4 features requises)
-⚙️ Installation & Exécution
+ Installation & Exécution
 bash
 # 1. Cloner le dépôt
 git clone https://github.com/votre-username/ml-flask-api.git
@@ -122,37 +116,37 @@ python app.py
 
 # 6. (Nouveau terminal) Lancer les tests
 python test_api.py
-🌐 URL locale après lancement : http://127.0.0.1:5000/
+ URL locale après lancement : http://127.0.0.1:5000/
 
 Critères d'Évaluation
 Critère	Pourcentage	Statut
-📊 Prétraitement	15%	✅
-🧠 Modèle	20%	✅
-🐍 API Flask	30%	✅
-🛡️ Robustesse	15%	✅
-🧪 Tests	10%	✅
-📝 Documentation	10%	✅
-Total	100%	✅
+ Prétraitement	15%	
+ Modèle	20%	
+ API Flask	30%	
+ Robustesse	15%	
+ Tests	10%	
+ Documentation	10%	
+Total	100%	
 
 Auteur
 <div align="center">
 Mouhamadou Mokhtar Thiam
-🎓 Institut Supérieur d'Informatique
-📚 Embedded Systems & IoT / Cybersecurity Student
-🔗 GitHub • LinkedIn
+ Institut Supérieur d'Informatique
+ Embedded Systems & IoT / Cybersecurity Student
+ GitHub • LinkedIn
 
 </div>
 
-## 🧠 **Pipeline Machine Learning** — *De la donnée à l'API*
+##  **Pipeline Machine Learning** — *De la donnée à l'API*
 
 ```mermaid
 graph LR
-    A[📊 Dataset Iris] --> B[🧹 Nettoyage]
-    B --> C[🔢 Encodage]
-    C --> D[📊 Train/Test Split]
-    D --> E[🌲 RandomForestClassifier]
-    E --> F[📈 Évaluation ~93%]
-    F --> G[💾 Sauvegarde model.pkl]
-    G --> H[🐍 Flask API]
-    H --> I[🌐 Routes REST]
-    I --> J[✨ Prédictions JSON]
+    A[ Dataset Iris] --> B[ Nettoyage]
+    B --> C[ Encodage]
+    C --> D[ Train/Test Split]
+    D --> E[ RandomForestClassifier]
+    E --> F[ Évaluation ~93%]
+    F --> G[ Sauvegarde model.pkl]
+    G --> H[ Flask API]
+    H --> I[ Routes REST]
+    I --> J[ Prédictions JSON]
